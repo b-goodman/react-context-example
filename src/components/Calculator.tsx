@@ -20,20 +20,20 @@ const Calculator: FunctionComponent<Props> = () => {
     };
 
     return (
-        <ThemeContext.Provider value={themes(themeMode)} >
-            <div className="calculator-wrapper" style={theme.wrapper}>
-                <div className="column">
-                    <div className="heading row">
-                        <h1>Calculator</h1>
-                        <input type="button" value="Toggle Theme" onClick={toggleTheme} />
-                    </div>
-                        <DisplayContext.Provider value={useDisplay()} >
-                            <Display />
-                            <Keypad />
-                        </DisplayContext.Provider >
+    <ThemeContext.Provider value={themes(themeMode)} >
+        <div className="calculator-wrapper" style={theme.wrapper}>
+            <div className="column">
+                <div className="heading row">
+                    <h1>Calculator</h1>
+                    <input type="button" value="Toggle Theme" onClick={toggleTheme} />
                 </div>
+                    <DisplayContext.Provider value={useDisplay()} >
+                        <Display />
+                        <Keypad />
+                    </DisplayContext.Provider >
             </div>
-        </ThemeContext.Provider >
+        </div>
+    </ThemeContext.Provider >
     )
 };
 

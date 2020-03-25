@@ -7,7 +7,7 @@ const colors = {
         colorSecondary:"#E8D3B0",
         displayBackground: "#ffffff",
         keyColor: "#1A1919",
-        colorAccent: "#c5c7cc",
+        colorAccent: "#fdfdff",
   },
   dark: {
         colorPrimary:" #363556",
